@@ -404,7 +404,7 @@ footer a {
   width: 100%;
   max-width: 512px;
   position: absolute;
-  bottom: -14px;
+  bottom: -1.5em;
   right: 0;
   opacity: 0.8;
 }
@@ -452,4 +452,53 @@ header {
 .fa-tag {
   opacity: 0.3;
   font-size: 50px;
+}
+
+.floating-button {
+  position: relative;
+  margin: 0;
+  padding: 0 25px;
+  background-color: rgba(255, 255, 255, 0.721);
+  border: solid white 3px;
+  border-radius: 5%;
+  position: fixed;
+  right: 15px;
+  z-index: 10;
+}
+
+#up-page {
+  bottom: 15px;
+  font-size: 50px;
+}
+@media screen and (max-width: 699px) {
+  #calendar {
+    bottom: 130px;
+    font-size: 50px;
+  }
+
+  #social {
+    bottom: 245px;
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #calendar {
+    bottom: none;
+    top: 130px;
+    font-size: 50px;
+  }
+
+  #social {
+    bottom: none;
+    top: 15px;
+    font-size: 50px;
+  }
+}
+#calendar .fa-calendar-alt,
+.fa-plus-square {
+  color: blue;
+}
+
+.fa-caret-square-up {
+  color: red;
 }
